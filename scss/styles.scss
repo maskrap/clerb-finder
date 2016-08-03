@@ -1,17 +1,9 @@
-$gray: #d3d3d3;
-$grey: 83;
-$green: #75B975;
-$stealblue: #4682B4;
-
 body {
-  background-image: url(http://weathernorthofthebay.com/wp-content/uploads/2015/08/montgomery-tx.jpg);
+  background-image: url(https://www.broadsheet.com.au/media/cache/77/a1/77a14e5706f4b44b561388eb00588767.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#map {
-  height: 400px;
-}
-#marys {
+.google-map {
   height: 400px;
 }
