@@ -1,0 +1,36 @@
+$gray: #d3d3d3;
+$grey: 83;
+$green: #75B975;
+$stealblue: #4682B4;
+
+body {
+  background-image: url(http://weathernorthofthebay.com/wp-content/uploads/2015/08/montgomery-tx.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  background: rgba($grey, $grey, $grey, 0.5);
+  border: 2px solid rgba($grey, $grey, $grey, 0.5);
+  padding: 40px 80px;
+  .button {
+    font-weight: normal;
+    text-align: center;
+    background: $green;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid $green;
+    margin-left: 0.5em;
+    letter-spacing: 0.0675em;
+    padding: 3px 10px;
+  }
+}
+
+.anywhere {
+  font-style: italic;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 3px 3px 2px $stealblue;
+}
