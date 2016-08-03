@@ -9,13 +9,16 @@
   </head>
   <body>
     <div class="container">
-      <h1>Get Weather Conditions From <span class="anywhere">Anywhere</span>!</h1>
-      <div class="box">
+      <h3>Your Current Location</h3>
+      <div id="map"></div>
+      <form id="city">
         <label for="location">Enter a location:</label>
         <input id="location" type="text">
-        <button class="button" id="clerbLocation">Get Current Humidity!</button>
-        <div class="showClerb"></div>
-      </div>
+        <button class="button" type="submit" name="button">Locationify</button>
+      </form>
     </div>
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIvs5yEklsX3c1m-Le6bkd-eGO58Jf3lM&callback=initMap"
+    async defer></script> -->
   </body>
 </html>

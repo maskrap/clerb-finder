@@ -1,14 +1,14 @@
-var apiKey = require('./../.env').apiKey;
+var gMapsKey = require('./../.env').gMapsKey;
 
-function Clerb(){
+function Google(){
 }
 
-Clerb.prototype.getClerb = function(city, displayFunction) {
-  $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey).then(function(response) {
-    displayFunction(city, response.main.humidity);
-  }).fail(function(error) {
-    $('.showClerb').text(error.responseJSON.message);
-  });
-}
+// Google.prototype.getClerb = function(city, displayFunction) {
+//   $.get('https://maps.googleapis.com/maps/api/js?key=' + city + '&appid=' + googleMaps).then(function(response) {
+//     displayFunction(city, response.main.humidity);
+//   }).fail(function(error) {
+//     $('.showClerb').text(error.responseJSON.message);
+//   });
+// };
 
-exports.clerbModule = Clerb;
+exports.googleModule = Google;
