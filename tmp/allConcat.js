@@ -39,6 +39,8 @@ function geolocationSuccess(position) {
   var myOptions = {
     zoom : 16,
     center : userLatLng,
+    draggable: false,
+    minZoom: 13,
     mapTypeId : google.maps.MapTypeId.ROADMAP
   };
   // Draw the map - you have to use 'getElementById' here.
@@ -46,9 +48,9 @@ function geolocationSuccess(position) {
   // Place the marker
   new google.maps.Marker({
     map: mapObject,
-    position: userLatLng
+    position: userLatLng,
+    draggable: false
   });
-  console.log(mapObject['data']);
 }
 
 function geolocationError(positionError) {
@@ -58,14 +60,17 @@ function geolocationError(positionError) {
 function locateMarys() {
   var clerb = new google.maps.Map(document.getElementById('marys'), {
     center: {lat: 45.522743, lng: -122.677572},
-    scrollwheel: false,
+    scrollwheel: true,
     zoom: 18,
+    draggable: false,
+    minZoom: 13,
     MapTypeId: google.maps.MapTypeId.ROADMAP
   });
 
   new google.maps.Marker({
     map: clerb,
-    position: {lat: 45.522743, lng: -122.677572}
+    position: {lat: 45.522743, lng: -122.677572},
+    icon: 'css/img/stripclub2.png'
   });
 }
 
@@ -95,7 +100,8 @@ function callback(results, status) {
       var place = results[i];
       new google.maps.Marker({
         map: map,
-        position: place.geometry.location
+        position: place.geometry.location,
+        icon: 'css/img/stripclub3.png'
       });
     }
   }
