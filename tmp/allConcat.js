@@ -51,6 +51,7 @@ function geolocationSuccess(position) {
     position: userLatLng,
     draggable: false
   });
+
 }
 
 function geolocationError(positionError) {
